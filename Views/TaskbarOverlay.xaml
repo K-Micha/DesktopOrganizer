@@ -1,0 +1,154 @@
+<Window x:Class="DesktopOrganizer.TaskbarOverlay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TaskbarOverlay"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        ShowActivated="False"
+        Topmost="True"
+        Focusable="False">
+
+	<Grid IsHitTestVisible="False"
+          Margin="3">
+
+		<!-- OUTER GLOW FRAME -->
+		<Border CornerRadius="4"
+                BorderThickness="1.5"
+                Background="#3210161E">
+
+			<Border.BorderBrush>
+				<LinearGradientBrush StartPoint="0,0.5"
+                                     EndPoint="1,0.5">
+
+					<GradientStop Color="#FF52C9FF"
+                                  Offset="0"/>
+
+					<GradientStop Color="#FF8BDBFF"
+                                  Offset="0.22"/>
+
+					<GradientStop Color="#FFFFFFFF"
+                                  Offset="0.50"/>
+
+					<GradientStop Color="#FFFFD7BF"
+                                  Offset="0.72"/>
+
+					<GradientStop Color="#FFFF8248"
+                                  Offset="1"/>
+
+				</LinearGradientBrush>
+			</Border.BorderBrush>
+
+			<Border.Effect>
+				<DropShadowEffect Color="#CC72D7FF"
+                                  BlurRadius="15"
+                                  ShadowDepth="0"
+                                  Opacity="0.75"/>
+			</Border.Effect>
+
+		</Border>
+
+
+		<!-- INNER BORDER / GLASS RIM -->
+		<Border Margin="2"
+                CornerRadius="3"
+                BorderThickness="1"
+                Background="#1010161E">
+
+			<Border.BorderBrush>
+				<LinearGradientBrush StartPoint="0,0.5"
+                                     EndPoint="1,0.5">
+
+					<GradientStop Color="#445CCFFF"
+                                  Offset="0"/>
+
+					<GradientStop Color="#30FFFFFF"
+                                  Offset="0.50"/>
+
+					<GradientStop Color="#44FF9560"
+                                  Offset="1"/>
+
+				</LinearGradientBrush>
+			</Border.BorderBrush>
+
+		</Border>
+
+
+		<!-- BLUE BLOOM LEFT -->
+		<Border CornerRadius="4"
+                BorderThickness="1.5"
+                Background="Transparent">
+
+			<Border.BorderBrush>
+				<LinearGradientBrush StartPoint="0,0.5"
+                                     EndPoint="1,0.5">
+
+					<GradientStop Color="#FF52C9FF"
+                                  Offset="0"/>
+
+					<GradientStop Color="#AA52C9FF"
+                                  Offset="0.20"/>
+
+					<GradientStop Color="#2252C9FF"
+                                  Offset="0.42"/>
+
+					<GradientStop Color="Transparent"
+                                  Offset="0.55"/>
+
+					<GradientStop Color="Transparent"
+                                  Offset="1"/>
+
+				</LinearGradientBrush>
+			</Border.BorderBrush>
+
+			<Border.Effect>
+				<DropShadowEffect Color="#FF38BFFF"
+                                  BlurRadius="22"
+                                  ShadowDepth="0"
+                                  Opacity="0.85"/>
+			</Border.Effect>
+
+		</Border>
+
+
+		<!-- ORANGE BLOOM RIGHT -->
+		<Border CornerRadius="4"
+                BorderThickness="1.5"
+                Background="Transparent">
+
+			<Border.BorderBrush>
+				<LinearGradientBrush StartPoint="0,0.5"
+                                     EndPoint="1,0.5">
+
+					<GradientStop Color="Transparent"
+                                  Offset="0"/>
+
+					<GradientStop Color="Transparent"
+                                  Offset="0.45"/>
+
+					<GradientStop Color="#22FF8848"
+                                  Offset="0.58"/>
+
+					<GradientStop Color="#AAFF8848"
+                                  Offset="0.80"/>
+
+					<GradientStop Color="#FFFF8848"
+                                  Offset="1"/>
+
+				</LinearGradientBrush>
+			</Border.BorderBrush>
+
+			<Border.Effect>
+				<DropShadowEffect Color="#FFFF7138"
+                                  BlurRadius="22"
+                                  ShadowDepth="0"
+                                  Opacity="0.85"/>
+			</Border.Effect>
+
+		</Border>
+
+	</Grid>
+
+</Window>
