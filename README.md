@@ -1,3 +1,4 @@
+
 # Desktop Organizer
 
 A small Windows desktop experiment built out of curiosity.
@@ -8,7 +9,7 @@ What started as a simple UI experiment quickly turned into a small desktop organ
 
 ## Preview
 
-![Desktop Organizer Preview](./assets/screenshots/desktop-organizer.png)
+<img width="596" height="797" alt="screen-desktop-organizer" src="https://github.com/user-attachments/assets/e9b380a8-28d1-4c42-abbe-9e24de31a494" />
 
 ## Features
 
